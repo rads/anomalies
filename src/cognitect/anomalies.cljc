@@ -14,7 +14,8 @@
 ;; limitations under the License.
 
 (ns cognitect.anomalies
-  (:require [clojure.spec.alpha :as s]))
+  (:require #?(:clj [clojure.spec.alpha :as s]
+               :cljs [cljs.spec.alpha :as s])))
 
 (s/def ::category #{::unavailable
                     ::interrupted
